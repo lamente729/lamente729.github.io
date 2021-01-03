@@ -588,7 +588,7 @@
 <h5 id="coding-utf-8-3"><a href="#coding-utf-8-3" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h5><h5 id="author-lamente-3"><a href="#author-lamente-3" class="headerlink" title="author:lamente"></a>author:lamente</h5><p>import tkinter as tk # 使用Tkinter前需要先导入</p>
 <h5 id="第1步，实例化object，建立窗口window-3"><a href="#第1步，实例化object，建立窗口window-3" class="headerlink" title="第1步，实例化object，建立窗口window"></a>第1步，实例化object，建立窗口window</h5><p>window = tk.Tk()</p>
 <h5 id="第2步，给窗口的可视化起名字-3"><a href="#第2步，给窗口的可视化起名字-3" class="headerlink" title="第2步，给窗口的可视化起名字"></a>第2步，给窗口的可视化起名字</h5><p>window.title(‘My Window’)</p>
-<h4 id="第3步，设定窗口的大小-长-宽-3"><a href="#第3步，设定窗口的大小-长-宽-3" class="headerlink" title="第3步，设定窗口的大小(长 * 宽)"></a>第3步，设定窗口的大小(长 * 宽)</h4><p>window.geometry(‘500x300’) # 这里的乘是小x</p>
+<h5 id="第3步，设定窗口的大小-长-宽-3"><a href="#第3步，设定窗口的大小-长-宽-3" class="headerlink" title="第3步，设定窗口的大小(长 * 宽)"></a>第3步，设定窗口的大小(长 * 宽)</h5><p>window.geometry(‘500x300’) # 这里的乘是小x</p>
 <h5 id="第4步，在图形界面上设定输入框控件entry框并放置"><a href="#第4步，在图形界面上设定输入框控件entry框并放置" class="headerlink" title="第4步，在图形界面上设定输入框控件entry框并放置"></a>第4步，在图形界面上设定输入框控件entry框并放置</h5><p>e = tk.Entry(window, show = None)#显示成明文形式</p>
 <p>e.pack()</p>
 <h5 id="第5步，定义两个触发事件时的函数insert-point和insert-end-注意：因为Python的执行顺序是从上往下，所以函数一定要放在按钮的上面"><a href="#第5步，定义两个触发事件时的函数insert-point和insert-end-注意：因为Python的执行顺序是从上往下，所以函数一定要放在按钮的上面" class="headerlink" title="第5步，定义两个触发事件时的函数insert_point和insert_end(注意：因为Python的执行顺序是从上往下，所以函数一定要放在按钮的上面)"></a>第5步，定义两个触发事件时的函数insert_point和insert_end(注意：因为Python的执行顺序是从上往下，所以函数一定要放在按钮的上面)</h5><p>def insert_point(): # 在鼠标焦点处插入输入内容</p>
@@ -627,7 +627,7 @@
 <p>b1.pack()</p>
 <h5 id="第7步，创建Listbox并为其添加内容"><a href="#第7步，创建Listbox并为其添加内容" class="headerlink" title="第7步，创建Listbox并为其添加内容"></a>第7步，创建Listbox并为其添加内容</h5><p>var2 = tk.StringVar()</p>
 <p>var2.set((1,2,3,4)) # 为变量var2设置值</p>
-<h4 id="创建Listbox"><a href="#创建Listbox" class="headerlink" title="创建Listbox"></a>创建Listbox</h4><p>lb = tk.Listbox(window, listvariable=var2) #将var2的值赋给Listbox</p>
+<h5 id="创建Listbox"><a href="#创建Listbox" class="headerlink" title="创建Listbox"></a>创建Listbox</h5><p>lb = tk.Listbox(window, listvariable=var2) #将var2的值赋给Listbox</p>
 <h5 id="创建一个list并将值循环添加到Listbox控件中"><a href="#创建一个list并将值循环添加到Listbox控件中" class="headerlink" title="创建一个list并将值循环添加到Listbox控件中"></a>创建一个list并将值循环添加到Listbox控件中</h5><p>list_items = [11,22,33,44]</p>
 <p>for item in list_items:</p>
 <p>lb.insert(‘end’, item) # 从最后一个位置开始加入值</p>
@@ -903,7 +903,7 @@
 <h5 id="第8步，定义用户登录功能"><a href="#第8步，定义用户登录功能" class="headerlink" title="第8步，定义用户登录功能"></a>第8步，定义用户登录功能</h5><p>def usr_login():</p>
 <h5 id="这两行代码就是获取用户输入的usr-name和usr-pwd"><a href="#这两行代码就是获取用户输入的usr-name和usr-pwd" class="headerlink" title="这两行代码就是获取用户输入的usr_name和usr_pwd"></a>这两行代码就是获取用户输入的usr_name和usr_pwd</h5><p>usr_name = var_usr_name.get()</p>
 <p>usr_pwd = var_usr_pwd.get()</p>
-<h5 id="这里设置异常捕获，当我们第一次访问用户信息文件时是不存在的，所以这里设置异常捕获。"><a href="#这里设置异常捕获，当我们第一次访问用户信息文件时是不存在的，所以这里设置异常捕获。" class="headerlink" title="这里设置异常捕获，当我们第一次访问用户信息文件时是不存在的，所以这里设置异常捕获。"></a>这里设置异常捕获，当我们第一次访问用户信息文件时是不存在的，所以这里设置异常捕获。</h5><h4 id="中间的两行就是我们的匹配，即程序将输入的信息和文件中的信息匹配。"><a href="#中间的两行就是我们的匹配，即程序将输入的信息和文件中的信息匹配。" class="headerlink" title="中间的两行就是我们的匹配，即程序将输入的信息和文件中的信息匹配。"></a>中间的两行就是我们的匹配，即程序将输入的信息和文件中的信息匹配。</h4><p>try:</p>
+<h5 id="这里设置异常捕获，当我们第一次访问用户信息文件时是不存在的，所以这里设置异常捕获。"><a href="#这里设置异常捕获，当我们第一次访问用户信息文件时是不存在的，所以这里设置异常捕获。" class="headerlink" title="这里设置异常捕获，当我们第一次访问用户信息文件时是不存在的，所以这里设置异常捕获。"></a>这里设置异常捕获，当我们第一次访问用户信息文件时是不存在的，所以这里设置异常捕获。</h5><h5 id="中间的两行就是我们的匹配，即程序将输入的信息和文件中的信息匹配。"><a href="#中间的两行就是我们的匹配，即程序将输入的信息和文件中的信息匹配。" class="headerlink" title="中间的两行就是我们的匹配，即程序将输入的信息和文件中的信息匹配。"></a>中间的两行就是我们的匹配，即程序将输入的信息和文件中的信息匹配。</h5><p>try:</p>
 <p>with open(‘usrs_info.pickle’, ‘rb’) as usr_file:</p>
 <p>usrs_info = pickle.load(usr_file)</p>
 <p>except FileNotFoundError:</p>
