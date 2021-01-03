@@ -477,8 +477,7 @@
 <li><p>第二个，我们小时候都玩过积木，只要发挥创意，相同的积木可以堆出各种造型。tkinter的组件也可以看做一个个积木，形状或许不同，其本质都是一样的，就是一个积木，不管它长什么样子，它始终就是积木！所以这些小组件都有许多共性，另外，个人认为，学习界面编程，最重要的不是一开始学习每个积木的样子，不是学习每个组件怎么用，而是这些组件该怎么放。初始学习中，怎么放远远比怎么用重要的多。网上有大量的文章资料，基本全是介绍组件怎么用的，对于怎么放，也就是tkinter中的布局管理器，都是一笔带过，这对初学者有点本末倒置，或许绝大部分是转载的原因吧，极少是自己真正写的。组件怎么用不是最迫切的，用到的时候再去了解也不迟，边用边学反而更好。因此我将专门写一章，详细介绍布局管理器的使用。</p>
 </li>
 </ul>
-<p>三、Tkinter 控件详细介绍</p>
-<p>1.Tkinter 模块元素简要说明</p>
+<h2 id="一、Tkinter-控件详细介绍"><a href="#一、Tkinter-控件详细介绍" class="headerlink" title="一、Tkinter 控件详细介绍"></a>一、Tkinter 控件详细介绍</h2><p>1.Tkinter 模块元素简要说明</p>
 <p>The Button Widget</p>
 <p>The Canvas Widget</p>
 <p>The Checkbutton Widget</p>
@@ -500,8 +499,7 @@
 <p>The Toplevel Widget</p>
 <p>Basic Widget Methods</p>
 <p>Toplevel Window Methods</p>
-<p>2.常用窗口部件及简要说明：</p>
-<p><code>Tkinter</code>支持<code>16</code>个核心的窗口部件，这个<code>16</code>个核心窗口部件类简要描述如下：<code>Button</code>：一个简单的按钮，用来执行一个命令或别的操作</p>
+<h2 id="二、常用窗口部件及简要说明："><a href="#二、常用窗口部件及简要说明：" class="headerlink" title="二、常用窗口部件及简要说明："></a>二、常用窗口部件及简要说明：</h2><p><code>Tkinter</code>支持<code>16</code>个核心的窗口部件，这个<code>16</code>个核心窗口部件类简要描述如下：<code>Button</code>：一个简单的按钮，用来执行一个命令或别的操作</p>
 <p><code>Canvas</code>：组织图形。这个部件可以用来绘制图表和图，创建图形编辑器，实现定制窗口部件。</p>
 <p><code>Checkbutton</code>：代表一个变量，它有两个不同的值。点击这个按钮将会在这两个值间切换。</p>
 <p><code>Entry</code>：文本输入域。</p>
@@ -518,8 +516,7 @@
 <p><code>Toplevel</code>：一个容器窗口部件，作为一个单独的、最上面的窗口显示。</p>
 <p><code>messageBox</code>：消息框，用于显示你应用程序的消息框。(Python2中为tkMessagebox)注意在Tkinter中窗口部件类没有分级；所有的窗口部件类在树中都是兄弟关系。</p>
 <p>所有这些窗口部件提供了<code>Misc</code>和几何管理方法、配置管理方法和部件自己定义的另外的方法。此外，<code>Toplevel</code>类也提供窗口管理接口。这意味一个典型的窗口部件类提供了大约<code>150</code>种方法。</p>
-<p>四、动手实践学习</p>
-<p>1.创建主窗口及Label部件(标签)创建使用</p>
+<h2 id="三、动手实践学习"><a href="#三、动手实践学习" class="headerlink" title="三、动手实践学习"></a>三、动手实践学习</h2><p>1.创建主窗口及Label部件(标签)创建使用</p>
 <p>我们要学习使用上面提到的这些控件首先要创建一个主窗口，就像作画一样，先要架好架子和画板，然后才能在上面放画纸和各种绘画元素，创建好主窗口才能在上面放置各种控件元素。而创建过程是很简单的，如下：</p>
 <p>示例代码：[^ /usr/bin/env python]</p>
 <h5 id="coding-utf-8"><a href="#coding-utf-8" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h5><h5 id="author-lamente"><a href="#author-lamente" class="headerlink" title="author:lamente"></a>author:lamente</h5><p>import tkinter as tk # 使用Tkinter前需要先导入</p>
@@ -840,7 +837,7 @@
 <p>以上的代码就是创建一个三行三列的表格，其实 grid 就是用表格的形式定位的。这里的参数 row 为行，colum 为列，padx 就是单元格左右间距，pady 就是单元格上下间距，ipadx是单元格内部元素与单元格的左右间距，ipady是单元格内部元素与单元格的上下间距。</p>
 <p>示例代码：</p>
 <p>#!/usr/bin/env python</p>
-<h1 id="coding-utf-8-11"><a href="#coding-utf-8-11" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h1><h5 id="author-lamente-10"><a href="#author-lamente-10" class="headerlink" title="author:lamente"></a>author:lamente</h5><p>import tkinter as tk # 使用Tkinter前需要先导入</p>
+<h5 id="author-lamente-10"><a href="#author-lamente-10" class="headerlink" title="author:lamente"></a>author:lamente</h5><p>import tkinter as tk # 使用Tkinter前需要先导入</p>
 <h5 id="第1步，实例化object，建立窗口window-12"><a href="#第1步，实例化object，建立窗口window-12" class="headerlink" title="第1步，实例化object，建立窗口window"></a>第1步，实例化object，建立窗口window</h5><p>window = tk.Tk()</p>
 <h5 id="第2步，给窗口的可视化起名字-12"><a href="#第2步，给窗口的可视化起名字-12" class="headerlink" title="第2步，给窗口的可视化起名字"></a>第2步，给窗口的可视化起名字</h5><p>window.title(‘My Window’)</p>
 <h5 id="第3步，设定窗口的大小-长-宽-12"><a href="#第3步，设定窗口的大小-长-宽-12" class="headerlink" title="第3步，设定窗口的大小(长 * 宽)"></a>第3步，设定窗口的大小(长 * 宽)</h5><p>window.geometry(‘500x300’) # 这里的乘是小x</p>
@@ -857,7 +854,7 @@
 <p>tk.Label(window, text=’P’, fg=’red’).pack(side=’right’) # 右</p>
 <p>示例代码：</p>
 <p>#!/usr/bin/env python</p>
-<h5 id="coding-utf-8-12"><a href="#coding-utf-8-12" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h5><h5 id="author-lamente-11"><a href="#author-lamente-11" class="headerlink" title="author:lamente"></a>author:lamente</h5><p>import tkinter as tk # 使用Tkinter前需要先导入</p>
+<h5 id="coding-utf-8-11"><a href="#coding-utf-8-11" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h5><h5 id="author-lamente-11"><a href="#author-lamente-11" class="headerlink" title="author:lamente"></a>author:lamente</h5><p>import tkinter as tk # 使用Tkinter前需要先导入</p>
 <h5 id="第1步，实例化object，建立窗口window-13"><a href="#第1步，实例化object，建立窗口window-13" class="headerlink" title="第1步，实例化object，建立窗口window"></a>第1步，实例化object，建立窗口window</h5><p>window = tk.Tk()</p>
 <h5 id="第2步，给窗口的可视化起名字-13"><a href="#第2步，给窗口的可视化起名字-13" class="headerlink" title="第2步，给窗口的可视化起名字"></a>第2步，给窗口的可视化起名字</h5><p>window.title(‘My Window’)</p>
 <h5 id="第3步，设定窗口的大小-长-宽-13"><a href="#第3步，设定窗口的大小-长-宽-13" class="headerlink" title="第3步，设定窗口的大小(长 * 宽)"></a>第3步，设定窗口的大小(长 * 宽)</h5><p>window.geometry(‘500x300’) # 这里的乘是小x</p>
@@ -872,7 +869,7 @@
 <p>tk.Label(window, text=’Pl’, font=(‘Arial’, 20), ).place(x=50, y=100, anchor=’nw’)</p>
 <p>示例代码：</p>
 <p>#!/usr/bin/env python</p>
-<h5 id="coding-utf-8-13"><a href="#coding-utf-8-13" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h5><h5 id="author-lamente-12"><a href="#author-lamente-12" class="headerlink" title="author:lamente"></a>author:lamente</h5><p>import tkinter as tk # 使用Tkinter前需要先导入</p>
+<h5 id="coding-utf-8-12"><a href="#coding-utf-8-12" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h5><h5 id="author-lamente-12"><a href="#author-lamente-12" class="headerlink" title="author:lamente"></a>author:lamente</h5><p>import tkinter as tk # 使用Tkinter前需要先导入</p>
 <h5 id="第1步，实例化object，建立窗口window-14"><a href="#第1步，实例化object，建立窗口window-14" class="headerlink" title="第1步，实例化object，建立窗口window"></a>第1步，实例化object，建立窗口window</h5><p>window = tk.Tk()</p>
 <h5 id="第2步，给窗口的可视化起名字-14"><a href="#第2步，给窗口的可视化起名字-14" class="headerlink" title="第2步，给窗口的可视化起名字"></a>第2步，给窗口的可视化起名字</h5><p>window.title(‘My Window’)</p>
 <h5 id="第3步，设定窗口的大小-长-宽-14"><a href="#第3步，设定窗口的大小-长-宽-14" class="headerlink" title="第3步，设定窗口的大小(长 * 宽)"></a>第3步，设定窗口的大小(长 * 宽)</h5><p>window.geometry(‘500x300’) # 这里的乘是小x</p>
@@ -883,7 +880,7 @@
 <p>编写一个用户登录界面，用户可以登录账户信息，如果账户已经存在，可以直接登录，登录名或者登录密码输入错误会提示，如果账户不存在，提示用户注册，点击注册进去注册页面，输入注册信息，确定后便可以返回登录界面进行登录。</p>
 <p>示例代码：</p>
 <p>#!/usr/bin/env python</p>
-<h5 id="coding-utf-8-14"><a href="#coding-utf-8-14" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h5><h5 id="author-lamente-13"><a href="#author-lamente-13" class="headerlink" title="author:lamente"></a>author:lamente</h5><p>import tkinter as tk # 使用Tkinter前需要先导入</p>
+<h5 id="coding-utf-8-13"><a href="#coding-utf-8-13" class="headerlink" title="-- coding: utf-8 --"></a>-<em>- coding: utf-8 -</em>-</h5><h5 id="author-lamente-13"><a href="#author-lamente-13" class="headerlink" title="author:lamente"></a>author:lamente</h5><p>import tkinter as tk # 使用Tkinter前需要先导入</p>
 <p>import tkinter.messagebox</p>
 <p>import pickle</p>
 <h5 id="第1步，实例化object，建立窗口window-15"><a href="#第1步，实例化object，建立窗口window-15" class="headerlink" title="第1步，实例化object，建立窗口window"></a>第1步，实例化object，建立窗口window</h5><p>window = tk.Tk()</p>
